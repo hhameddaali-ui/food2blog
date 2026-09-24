@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav class="sidebar" id="mySidebar">
+        <button class="close-btn" onclick="closeMenu()">Close Menu</button>
+        <h2>My Food</h2>
+        <a href="#food" onclick="closeMenu()">Food</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#footer" onclick="closeMenu()">Mail</a>
+    </nav>
+
+
+    <header class="topbar">
+        <button class="menu-btn" onclick="openMenu()">☰</button>
+        <span>My Food</span>
+    </header>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <main class="content">
+
+
+        <section id="food" class="grid">
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\Italian hoagies.jpg" alt="">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\download.jpg" alt="">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\18225573488017030.jpg" alt="Post 3">
+                <h3>Cherries, Interrupted</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\Tagliatelle Perfecto Casero Receta Sencilla.jpg" alt="Post 4">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\Rainbow fruity ice pops!💕 this is an exclusive….jpg" alt="Post 5">
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\666321707419825591.jpg" alt="Post 6">
+                <h3>Salmon For Your Skin</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\fast food sağlıksız beslenme 🥵🥵.jpg" alt="Post 7">
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Write your text here.</p>
+            </article>
+
+            <article class="post">
+                <img src="c:\Users\bj13nq\Downloads\Какой завтрак заставит тебя встать с кровати_ 🥐☕️.jpg"
+                    alt="Post 8">
+                <h3>Le French</h3>
+                <p>Write your text here.</p>
+            </article>
+
+        </section>
+
+
+        <nav class="pagination">
+            <a href="#">«</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">»</a>
+        </nav>
+
+        <hr>
+
+
+        <section id="about" class="about">
+            <img src="c:\Users\bj13nq\Downloads\download (1).jpg" alt="About me">
+            <div>
+                <h2>About Me, The Food Man</h2>
+                <h4>I am Who I Am!</h4>
+                <p><em>With Passion For Real, Good Food</em></p>
+                <p>Write about yourself here.</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer" class="footer">
+        <div class="footer-grid">
+
+            <div>
+                <h3>FOOTER</h3>
+                <p>Write your footer text here.</p>
+                <p>Powered by your name</p>
+            </div>
+
+            <div>
+                <h3>BLOG POSTS</h3>
+                <div class="mini-post">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5975441dbebafb04b95f650f/1660856879994-1GKIMBY9PGAUQA5ASVJ2/IMG_1103.jpg"> 
+                    <span><b>Lorem</b><br>Sed mattis nunc</span>
+                </div>
+                <div class="mini-post">
+                    <img src="c:\Users\bj13nq\Downloads\Summer.jpg">
+                    <span><b>Ipsum</b><br>Praes tinci sed</span>
+                </div>
+            </div>
+
+            <div>
+                <h3>POPULAR TAGS</h3>
+                <div class="tags">
+                    <span>Travel</span><span>New York</span><span>Dinner</span>
+                    <span>Salmon</span><span>France</span><span>Drinks</span>
+                    <span>Ideas</span><span>Flavors</span><span>Cuisine</span>
+                    <span>Chicken</span><span>Dressing</span><span>Fried</span>
+                    <span>Fish</span><span>Duck</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const sb = document.getElementById('mySidebar');
+        const ov = document.getElementById('overlay');
+        function openMenu() {sb.classList.add('open'); ov.style.display = 'block';}
+        function closeMenu() {sb.classList.remove('open'); ov.style.display = 'none';}
+    </script>
+</body>
+
+</html>
